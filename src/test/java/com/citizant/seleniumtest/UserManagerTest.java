@@ -39,8 +39,8 @@ public class UserManagerTest {
 	  private WebElement lastNameField;
 	  private WebElement addButton;
 	  
-	  private String seleniumHub = "http://54.144.179.45:4444/wd/hub";
-	  private String baseUrl =  "http://50.19.179.31:9090/jenkinsmanager";
+	  private String seleniumHub = "http://50.19.179.31:4444/wd/hub";
+	  private String baseUrl =  "http://50.19.179.31:9090/jenkinsmanager/index.html";
 
 	  
 	  @Before
