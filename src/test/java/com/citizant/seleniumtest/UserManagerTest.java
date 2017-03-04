@@ -39,8 +39,8 @@ public class UserManagerTest {
 	  private WebElement lastNameField;
 	  private WebElement addButton;
 	  
-	  private String seleniumHub = "http://192.168.60.135:4444/wd/hub";
-	  private String baseUrl =  "http://192.168.60.135:8080/usermanager";
+	  private String seleniumHub = "http://54.144.179.45:4444/wd/hub";
+	  private String baseUrl =  "http://50.19.179.31:9090/jenkinsmanager";
 
 	  
 	  @Before
@@ -71,7 +71,7 @@ public class UserManagerTest {
 	    	
 	    }
 	    
-	    Capabilities cap = DesiredCapabilities.chrome();
+	    Capabilities cap = DesiredCapabilities.firefox();
 	    driver = new RemoteWebDriver(hubUrl, cap);
 	    driverWait = new WebDriverWait(driver, 30);
 	    driver.get(base);
